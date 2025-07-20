@@ -5,3 +5,5 @@
 ## [Recursion](https://github.com/ujwalap801/Recursion_DSA)
 
 ## [Search_sort](https://github.com/ujwalap801/Search_Sort_DSA)
+
+## [Linked_List](https://github.com/ujwalap801/Linked_List_DSA.git)
