@@ -7,3 +7,7 @@
 ## [Search_sort](https://github.com/ujwalap801/Search_Sort_DSA)
 
 ## [Linked_List](https://github.com/ujwalap801/Linked_List_DSA.git)
+
+## [Map](https://github.com/ujwalap801/Map_DSA.git)
+
+## [Set](https://github.com/ujwalap801/Set_DSA.git)
