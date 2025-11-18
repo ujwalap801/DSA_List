@@ -2,6 +2,8 @@
 
 ## [Kth_Element_Smallest](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)
 
+## [Lowest_Common_Ancestor](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/)
+
 ## [Search_BST](https://leetcode.com/problems/search-in-a-binary-search-tree/description/)
 
 ## [Validate_BST](https://leetcode.com/problems/validate-binary-search-tree/description/)
