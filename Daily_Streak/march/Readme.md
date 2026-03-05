@@ -1,0 +1,1 @@
+## [Minimum_Code_Binary_Change](https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/?envType=daily-question&envId=2026-03-05)
