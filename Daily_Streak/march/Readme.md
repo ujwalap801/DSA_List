@@ -5,3 +5,5 @@
 ## [unique-binary-string_M_8](https://leetcode.com/problems/find-unique-binary-string/description/?envType=daily-question&envId=2026-03-08)
 
 ## [Binary_Complement_M_11](https://leetcode.com/problems/complement-of-base-10-integer/?envType=daily-question&envId=2026-03-11)
+
+## [M_14](https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/?envType=daily-question&envId=2026-03-14)
