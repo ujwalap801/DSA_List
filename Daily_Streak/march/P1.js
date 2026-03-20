@@ -1,31 +1,37 @@
-function printPeak(matrix)
-{
-    let rows = matrix.length;
-    let cols = matrix[0].length;
-    
-    for(let i=0;i<rows;i++)
-    {
-        for(let j=0;j<cols;j++)
-        {
-            let curr = matrix[i][j];
-            
-            let top = i>0? matrix[i-1][j] : -Infinity;
-            let bottom = i<rows-1 ? matrix[i+1][j] : -Infinity;
-            
-            let left = j >0 ? matrix[i][j-1] :-Infinity;
-            
-            let right = j< cols-1 ? matrix[i][j+1] :-Infinity;
-            
-            if(curr >= top && curr>= bottom && curr >= left && curr >= right)
-            {
-                return {value:curr , pos :[i,j]};
+function detectFraud(transactions) {
+    const map = new Map();
+
+    for (let tx of transactions) {
+        const [sender, receiver, amount, timestampStr] = tx.split(" ");
+        console.log(timestampStr);
+        const timestamp = parseInt(timestampStr);
+
+        const key = sender + "-" + receiver + "-" + amount;
+
+        if (map.has(key)) {
+            const oldTimestamp = map.get(key);
+
+            if (timestamp - oldTimestamp < 60) {
+                // FRAUD
+                console.log(tx);
+
+                // ❗ Do NOT update timestamp
+            } else {
+                // Safe → update timestamp
+                map.set(key, timestamp);
             }
+        } else {
+            map.set(key, timestamp);
         }
     }
+    
+    console.log(map)
 }
 
-console.log(printPeak([
-    [10, 20,15],
-    [21, 30, 14],
-    
-    [7, 16, 32]]))
+const input = [
+    "Anto Logesh 50 100",
+    "Anto Logesh 50 120", // fraud (diff = 20)
+    "Anto Logesh 50 200"  // safe (diff from 100 = 100)
+];
+
+detectFraud(input);
